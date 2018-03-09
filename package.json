@@ -1,24 +1,25 @@
 {
-  "name": "cordova-plugin-firebase-analytics",
-  "version": "0.12.1",
+  "name": "lycwed-cordova-plugin-firebase-analytics",
+  "version": "1.0.0",
   "description": "Cordova plugin for Firebase Analytics",
   "cordova": {
-    "id": "cordova-plugin-firebase-analytics",
-    "platforms": [
-      "ios",
-      "android"
-    ]
+    "id": "lycwed-cordova-plugin-firebase-analytics",
+    "platforms": ["ios", "android"]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chemerisuk/cordova-plugin-firebase-analytics.git"
+    "url":
+      "git+https://github.com/lycwed/lycwed-cordova-plugin-firebase-analytics.git"
   },
-  "author": "Maksim Chemerisuk <chemerisuk@gmail.com> (https://github.com/chemerisuk)",
+  "author":
+    "Maksim Chemerisuk <chemerisuk@gmail.com> (https://github.com/chemerisuk)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chemerisuk/cordova-plugin-firebase-analytics/issues"
+    "url":
+      "https://github.com/lycwed/lycwed-cordova-plugin-firebase-analytics/issues"
   },
-  "homepage": "https://github.com/chemerisuk/cordova-plugin-firebase-analytics#readme",
+  "homepage":
+    "https://github.com/lycwed/lycwed-cordova-plugin-firebase-analytics#readme",
   "keywords": [
     "cordova",
     "firebase",
@@ -28,7 +29,8 @@
     "cordova-ios"
   ],
   "scripts": {
-    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
+    "version":
+      "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
     "postversion": "git push && git push --tags"
   }
 }
