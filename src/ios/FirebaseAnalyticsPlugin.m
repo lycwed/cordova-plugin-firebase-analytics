@@ -1,4 +1,6 @@
 #import "FirebaseAnalyticsPlugin.h"
+#import <Cordova/CDV.h>
+#import "AppDelegate.h"
 @import Firebase;
 
 
