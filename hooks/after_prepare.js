@@ -4,6 +4,18 @@
 var fs = require("fs");
 var path = require("path");
 
+fs.ensureDirSync = function(dir) {
+  if (!fs.existsSync(dir)) {
+    dir.split(path.sep).reduce(function(currentPath, folder) {
+      currentPath += folder + path.sep;
+      if (!fs.existsSync(currentPath)) {
+        fs.mkdirSync(currentPath);
+      }
+      return currentPath;
+    }, "");
+  }
+};
+
 var config = fs.readFileSync("config.xml").toString();
 var name = getValue(config, "name");
 
