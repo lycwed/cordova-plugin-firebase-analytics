@@ -17,6 +17,7 @@
         <engine name="cordova-ios" version=">=4.3.0"/>
     </engines>
     <platform name="ios">
+        <resource-file src="src/ios/GoogleService-Info.plist" />
         <config-file target="config.xml" parent="/*">
             <feature name="FirebaseAnalytics">
                 <param name="ios-package" value="FirebaseAnalyticsPlugin" />
@@ -30,6 +31,7 @@
         <pod id="Firebase/Core" version="4.10.0" />
     </platform>
     <platform name="android">
+        <source-file src="src/android/google-services.json" target-dir="." />
         <preference name="FIREBASE_VERSION" default="11.0.+"/>
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FirebaseAnalytics">
