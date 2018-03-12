@@ -68,7 +68,3 @@ Sets whether analytics collection is enabled for this app on this device.
 ```js
 cordova.plugins.firebase.analytics.setEnabled(false);
 ```
-
-[npm-url]: https://www.npmjs.com/package/cordova-plugin-firebase-analytics
-[npm-version]: https://img.shields.io/npm/v/cordova-plugin-firebase-analytics.svg
-[npm-downloads]: https://img.shields.io/npm/dm/cordova-plugin-firebase-analytics.svg

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="lycwed-cordova-plugin-firebase-analytics" version="1.0.3" 
+<plugin id="lycwed-cordova-plugin-firebase-analytics" version="1.0.4" 
     xmlns="http://apache.org/cordova/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>FirebaseAnalyticsPlugin</name>
@@ -44,5 +44,5 @@
         <framework src="com.google.firebase:firebase-core:$FIREBASE_VERSION" />
         <source-file src="src/android/FirebaseAnalyticsPlugin.java" target-dir="src/by/chemerisuk/cordova/firebase/" />
     </platform>
-    <hook src="scripts/after_prepare.js" type="after_prepare" />
+    <hook src="hooks/after_prepare.js" type="after_prepare" />
 </plugin>

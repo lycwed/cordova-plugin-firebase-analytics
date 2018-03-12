@@ -1,6 +1,6 @@
 {
   "name": "lycwed-cordova-plugin-firebase-analytics",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cordova plugin for Firebase Analytics",
   "cordova": {
     "id": "lycwed-cordova-plugin-firebase-analytics",

@@ -72,20 +72,17 @@ function copyKey(platform, callback) {
 
   if (fileExists(file)) {
     try {
-      var contents = fs.readFileSync(file).toString();
-
-      try {
-        var folder = destPath.substring(0, destPath.lastIndexOf("/"));
-        fs.ensureDirSync(folder);
-        fs.writeFileSync(destPath, contents);
-      } catch (err) {
-        // skip
-      }
+      var contents = fs.readFileSync(file).toString(),
+        folder = destPath.substring(0, destPath.lastIndexOf("/"));
+      fs.ensureDirSync(folder);
+      fs.writeFileSync(destPath, contents);
 
       callback && callback(contents);
     } catch (err) {
       console.log("copyKey error", err);
     }
+  } else {
+    console.log("copyKey file " + file + " does not exist");
   }
 }
 
