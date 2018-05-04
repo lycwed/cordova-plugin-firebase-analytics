@@ -25,7 +25,7 @@
         </config-file>
         <header-file src="src/ios/FirebaseAnalyticsPlugin.h" />
         <source-file src="src/ios/FirebaseAnalyticsPlugin.m" />
-        <resource-file src="GoogleService-Info.plist" />
+        <resource-file src="src/ios/GoogleService-Info.plist" />
         <framework src="AdSupport.framework" />
         <pods-config ios-min-version="9.0" use-frameworks="true" />
         <pod id="Firebase/Core" version="4.10.0" />
@@ -40,7 +40,8 @@
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.INTERNET" />
         </config-file>
-        <dependency id="cordova-support-google-services" version="~1.1.0"/>
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+        <source-file src="src/android/google-services.json" target-dir="." />
         <framework src="com.google.firebase:firebase-core:11.8.0" />
         <source-file src="src/android/FirebaseAnalyticsPlugin.java" target-dir="src/by/chemerisuk/cordova/firebase/" />
     </platform>
